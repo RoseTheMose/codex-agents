@@ -1,0 +1,3 @@
+interface:
+  display_name: "Study Stats"
+  short_description: "Build a study app and teach from saved results"

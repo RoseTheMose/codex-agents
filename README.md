@@ -1,4 +1,20 @@
-# Study workflow for Codex
+# Study workflows for Codex
+
+## Study Stats: one reusable skill
+
+**[Download study-stats.zip](https://github.com/RoseTheMose/codex-agents/raw/refs/heads/main/downloads/study-stats.zip)** and extract it into a new study project, preserving `.agents/`. Open the project in Codex and follow [START-STUDY-STATS.md](START-STUDY-STATS.md). This skill combines the teaching workflow and app builder instructions in one package; it does not require a separate custom agent.
+
+Alternatively, clone this repository and install the skill into a project:
+
+```powershell
+node install-study-stats.mjs --project "../My New Study"
+```
+
+Invoke `$study-stats`. It asks about the goal, learner, language, source material and answer-key status, then asks whether the app should stay local or be deployed to Cloudflare. The bundle includes a clean Node/SQLite starter based on Tomi Study's quiz, review, statistics, and saved-results pattern. It contains no Tomi questions, scans, or learner data. For Cloudflare, the skill guides adaptation to a hosted API, D1, and private access; the local starter is not directly deployable as static HTML.
+
+The original `teach` plus `study-builder` kit remains available below for projects that prefer a separate teaching skill and engineering agent. Both downloads are for Codex projects, not ordinary ChatGPT chat uploads.
+
+## Original teach + study-builder kit
 
 A reusable study kit that combines **teach** and **study-builder**, shared by [RoseTheMose](https://github.com/RoseTheMose).
 
